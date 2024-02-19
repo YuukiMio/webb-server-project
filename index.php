@@ -10,11 +10,11 @@
 </head>
 <body>
 <header>
-  <div><h1>Framtidsmåleriet</h1></div>
+  <h1 id="title">Framtidsmåleriet</h1>
   <nav class="navbar" >
     <div class="container-fluid justify-content-center" id="container">
       <button class="btn btn-outline-primary" type="button">
-        <a href="#">Hemrm   </a>
+        <a href="#">Hem</a>
       </button>
       <button class="btn btn-outline-primary" type="button">
         <a href="#">Om oss</a>
@@ -25,6 +25,9 @@
       <button class="btn btn-outline-primary" type="button">
         <a href="forum.php">Kontakt</a>
       </button>
+      <button class="btn btn-outline-primary" type="button">
+        <a href="gallery.php">Bilder</a>
+      </button>
      
       
 
@@ -33,11 +36,33 @@
   </nav>
 </header>
   <main>
-    <h1>Vår affärsidé</h1>
-    <h1>Vilka är vi?</h1>
-    <h1>Kompetens utbildningar</h1>
-    <h1>Frågor och svar</h1>
+    <div class="title">
+      <h1>Vår affärsidé</h1>
+      <p>öLorem ipsum, dolor sit amet consectetur adipisicing elit. Error necessitatibus accusamus dolorum, tenetur, suscipit quia rerum voluptatum quo velit deleniti repudiandae? Non dolores dolorum, architecto ab fuga eligendi quod ut.</p>
 
+    </div>
+    <div class="title">
+      <h1>Vilka är vi?</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatibus modi similique doloribus esse exercitationem corporis error, velit quo facere, harum explicabo ullam cupiditate omnis inventore aspernatur possimus suscipit officiis.</p>
+
+    </div>
+    <div  class="title">
+      <h1>Kompetens utbildningar</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit sed voluptas enim minima veniam, nostrum sint aspernatur doloremque dolore ad dolor voluptates error, voluptatem dicta unde nulla ratione. Saepe, voluptatem!</p>
+
+    </div>
+    <div  class="title">
+      <h1>Frågor och svar</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo aperiam quisquam accusamus illum, excepturi possimus, necessitatibus ipsa reprehenderit ad rem sint facere? Libero similique, aperiam laboriosam laborum sapiente amet omnis.</p>
+
+    </div>
+    
+
+    
+
+    
+
+    
   </main>
  
 

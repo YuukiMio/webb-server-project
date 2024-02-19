@@ -1,10 +1,13 @@
 body {
   background-color: rgb(49, 49, 49);
-  color: white;
+  /*color: white;*/
   text-align: center;
   margin-top: 10px;
 }
+#title, .title{
+  color: white;
 
+}
 
 
 
@@ -36,3 +39,4 @@ a {
   
 
 }
+
