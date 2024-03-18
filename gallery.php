@@ -3,25 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Referenssida</title>
+  <link rel="stylesheet" href="GalleryStyles.css">
 
 </head>
 <body>
   <header class="header">
-    <h1></h1>
+    <h1>Referenser</h1>
   </header>
   <div class="gallery">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-    <img src="" alt="">
-
-
-
-
+    <img src="/gallery/download.jpg">
+    <img src="/gallery/Exterior-Painting.jpg.webp">
+    <img src="/gallery/House-Painters-West-Auckland.jpg">
+    <img src="/gallery/man-painting.jpg">
+    <img src="/gallery/Professional-Hotel-Decoration-Services.jpg">
+    <img src="/gallery/iStock-1410581917-1-350x300.jpg">
   </div>
   
 </body>
