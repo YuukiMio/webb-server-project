@@ -1,7 +1,11 @@
 <?php
-require "vendor/autoload.php";
+
+
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
+
+require 'vendor/autoload.php';
 
 if (isset($_POST['skicka']))
 {
@@ -9,9 +13,18 @@ $first_name = $_POST["Förnamn"];
 $last_name = $_POST["Efternamn"];
 $email = $_POST["Email"];
 $comments = $_POST["Kommentarer"];
+$from = "$comments från $first_name $last_name email: $email";
+if (empty($email)){
+  
+  
+  echo "<div class='alert alert-danger  p-1 m-1' id='alert'>Du behöver fylla hela kontaktformulär</div>";
 
+}else
+
+{
 $mail = new PHPMailer(true);
 
+$mail->SMTPDebug = 0;
 $mail->isSMTP();
 $mail->SMTPAuth = true;
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
@@ -22,19 +35,19 @@ $mail->Host = 'smtp.gmail.com';
 
 $mail->Username = '04pontho@skola.boras.se';
 
-$mail->Password = 'ihkh vvoi xawe wfws';
+$mail->Password = 'tptd buat zwfs hzfz';
 
-$mail->setFrom($email, $first_name, $last_name);
+$mail->setFrom($email, $first_name);
 $mail->addAddress('04pontho@skola.boras.se');
 
-$mail->Body = $comments;
+$mail->Body = $from; 
 
 $mail->send();
 
 echo "<div class='alert alert-success'>Mail har skickats</div>";
 
 }
-
+}
 ?>
 
 
@@ -77,7 +90,7 @@ echo "<div class='alert alert-success'>Mail har skickats</div>";
         <div>
           <input type="submit" class="btn btn-primary" name="skicka" placeholder="skicka">
         </div>
-        <a href="index.php">tillbaka</a>
+        <a href="index.php">Tillbaka</a>
         
       </div>
     </form>
